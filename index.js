@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000
 const authRoutes = require('./routes/auth.js')
 
 app.use(cors({
-    origins: ["https://chat-app-client-3ihmbwru0-mosse692s-projects.vercel.app"],
+    origins: ["https://chat-app-client-jet.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }))
