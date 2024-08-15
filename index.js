@@ -11,8 +11,8 @@ const authRoutes = require('./routes/auth.js')
 
 app.use(cors({
     origin: ["https://chat-app-client-jet.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }))
 
 app.use(express.json())
