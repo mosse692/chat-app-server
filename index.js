@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.use('/auth', authRoutes)
+app.use('/auth', cors(), authRoutes)
 
 app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`))
 
