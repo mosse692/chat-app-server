@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000
 const authRoutes = require('./routes/auth.js')
 
 app.use(cors({
-    origin: ["https://chat-app-server-phi-steel.vercel.app/auth/signup"],
+    origin: ["https://chat-app-server-phi-steel.vercel.app/"],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true 
 }))
